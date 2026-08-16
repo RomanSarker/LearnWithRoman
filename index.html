@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillBD - Learn practical skills and build your career.">
+  <title>SkillBD — Learn. Build. Grow.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🎓 Learn from industry experts</span>
+      <span class="topbar-right">Need help? <b>01700-000000</b></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="SkillBD home">
+        <span class="brand-mark">S</span>
+        <span>Skill<span>BD</span></span>
+      </a>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#courses">Courses</a>
+        <a href="#categories">Categories</a>
+        <a href="#live">Live Classes</a>
+        <a href="#success">Success Stories</a>
+        <a href="#blog">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="btn btn-outline" data-modal="loginModal">Login</button>
+        <button class="btn btn-primary" data-modal="registerModal">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> 12,000+ learners are growing with SkillBD</div>
+          <h1>Learn skills.<br><span>Build your future.</span></h1>
+          <p>Practical courses, expert mentors and career-focused learning — built for the next generation of Bangladesh.</p>
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary btn-lg">Explore Courses <span>→</span></a>
+            <button class="btn btn-light btn-lg" data-modal="demoModal">▶ Watch Free Demo</button>
+          </div>
+          <div class="trust-row">
+            <div class="avatar-stack">
+              <span>R</span><span>A</span><span>S</span><span>M</span>
+            </div>
+            <div><strong>4.9/5</strong> <span class="stars">★★★★★</span><br><small>Loved by 12,000+ learners</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card main-learning">
+            <div class="video-thumb">
+              <div class="play-circle">▶</div>
+              <div class="video-label">PREVIEW CLASS</div>
+            </div>
+            <div class="learning-info">
+              <span class="tag">POPULAR</span>
+              <h3>Complete MERN Stack Development</h3>
+              <div class="mini-meta"><span>⭐ 4.9</span><span>•</span><span>38 lessons</span></div>
+            </div>
+          </div>
+          <div class="float-card students"><span class="float-icon green">✓</span><div><b>12K+</b><small>Happy learners</small></div></div>
+          <div class="float-card certificate"><span class="float-icon purple">✦</span><div><b>Verified</b><small>Certificates</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>12K+</strong><span>Active Learners</span></div>
+        <div><strong>85+</strong><span>Expert Mentors</span></div>
+        <div><strong>120+</strong><span>Career Courses</span></div>
+        <div><strong>4.9/5</strong><span>Average Rating</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">LEARN & GROW</span><h2>Popular courses</h2><p>Build job-ready skills with practical, mentor-led courses.</p></div>
+          <a class="view-all" href="#courses">View all courses →</a>
+        </div>
+
+        <div class="course-filters">
+          <button class="filter active" data-filter="all">All Courses</button>
+          <button class="filter" data-filter="development">Development</button>
+          <button class="filter" data-filter="data">Data & AI</button>
+          <button class="filter" data-filter="design">Design</button>
+          <button class="filter" data-filter="career">Career</button>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-head center"><div><span class="section-kicker">EXPLORE</span><h2>Learn by category</h2><p>Choose a path and start building your skills today.</p></div></div>
+        <div class="category-grid">
+          <button class="category-card" data-category="development"><span class="cat-icon blue">⌘</span><b>Web Development</b><small>32 Courses</small></button>
+          <button class="category-card" data-category="data"><span class="cat-icon purple">◈</span><b>Data & AI</b><small>24 Courses</small></button>
+          <button class="category-card" data-category="design"><span class="cat-icon orange">✦</span><b>UI/UX & Design</b><small>18 Courses</small></button>
+          <button class="category-card" data-category="career"><span class="cat-icon green">↗</span><b>Career & Skills</b><small>27 Courses</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section live-section" id="live">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">LIVE LEARNING</span><h2>Upcoming live classes</h2><p>Learn directly from mentors and get your questions answered.</p></div>
+          <a class="view-all" href="#live">See schedule →</a>
+        </div>
+        <div class="live-grid">
+          <article class="live-card">
+            <div class="live-date"><b>18</b><span>AUG</span></div>
+            <div class="live-content"><span class="tag red">LIVE</span><h3>Modern React & Next.js</h3><p>With Arif Rahman · 8:00 PM</p><button class="btn btn-dark join-btn">Reserve Seat</button></div>
+          </article>
+          <article class="live-card">
+            <div class="live-date purple-date"><b>21</b><span>AUG</span></div>
+            <div class="live-content"><span class="tag purple-tag">UPCOMING</span><h3>Power BI for Business Analytics</h3><p>With Nusrat Jahan · 9:00 PM</p><button class="btn btn-dark join-btn">Reserve Seat</button></div>
+          </article>
+          <article class="live-card">
+            <div class="live-date green-date"><b>24</b><span>AUG</span></div>
+            <div class="live-content"><span class="tag green-tag">UPCOMING</span><h3>Software QA Automation</h3><p>With Tanvir Ahmed · 8:30 PM</p><button class="btn btn-dark join-btn">Reserve Seat</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container why-grid">
+        <div class="why-visual">
+          <div class="dashboard-preview">
+            <div class="dash-top"><span class="brand-mini">SkillBD</span><span class="mini-avatar">R</span></div>
+            <div class="dash-body"><small>MY LEARNING</small><h3>Keep going, Roman 👋</h3><div class="progress-box"><div><span>MERN Stack Development</span><b>68%</b></div><div class="progress"><i style="width:68%"></i></div><small>24 of 35 lessons completed</small></div><div class="mini-cards"><span>✓ 8 Quizzes</span><span>🏆 2 Certificates</span></div></div>
+          </div>
+        </div>
+        <div class="why-copy"><span class="section-kicker">WHY SKILLBD</span><h2>Learning that moves your career forward.</h2><p>We focus on practical outcomes — not just watching videos. Learn, practice, build projects and prove your skills.</p>
+          <div class="benefits">
+            <div><span>✓</span><div><b>Practical projects</b><small>Build portfolio-ready projects while you learn.</small></div></div>
+            <div><span>✓</span><div><b>Expert mentors</b><small>Learn from people who work in the industry.</small></div></div>
+            <div><span>✓</span><div><b>Verified certificates</b><small>Show your achievements with a verifiable certificate.</small></div></div>
+            <div><span>✓</span><div><b>Career-focused</b><small>Skills designed around real-world job requirements.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="success">
+      <div class="container">
+        <div class="section-head center"><div><span class="section-kicker">SUCCESS STORIES</span><h2>Learners who made the leap</h2><p>Real learning experiences from our community.</p></div></div>
+        <div class="testimonial-grid">
+          <article class="testimonial"><div class="quote">“</div><p>SkillBD helped me turn my scattered learning into a clear roadmap. The projects made a huge difference in my confidence.</p><div class="person"><span class="person-avatar">N</span><div><b>Nabila Islam</b><small>Junior Software Engineer</small></div></div></article>
+          <article class="testimonial"><div class="quote">“</div><p>The mentor feedback was the best part. I finally understood how to build projects that look professional, not just tutorials.</p><div class="person"><span class="person-avatar blue-bg">F</span><div><b>Fahim Hasan</b><small>Frontend Developer</small></div></div></article>
+          <article class="testimonial"><div class="quote">“</div><p>I started with zero Power BI experience. After finishing the course, I built dashboards I could actually use at work.</p><div class="person"><span class="person-avatar purple-bg">T</span><div><b>Tanjim Roy</b><small>MIS Executive</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">FROM THE BLOG</span><h2>Learn beyond the classroom</h2></div><a class="view-all" href="#blog">Read all →</a></div>
+        <div class="blog-grid">
+          <article class="blog-card"><div class="blog-img blog-1">⌘</div><div class="blog-body"><span>Career</span><h3>How to build a job-ready developer portfolio</h3><p>5 practical ideas to make your GitHub and portfolio stand out.</p><a href="#">Read article →</a></div></article>
+          <article class="blog-card"><div class="blog-img blog-2">◈</div><div class="blog-body"><span>Data</span><h3>Power BI roadmap for beginners in 2026</h3><p>A simple path from Excel dashboards to professional BI.</p><a href="#">Read article →</a></div></article>
+          <article class="blog-card"><div class="blog-img blog-3">✦</div><div class="blog-body"><span>Development</span><h3>React vs Next.js: what should you learn first?</h3><p>Understand the difference and choose the right learning path.</p><a href="#">Read article →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner"><div><span class="section-kicker light-kicker">START TODAY</span><h2>Your next skill could change everything.</h2><p>Explore practical courses and take the first step toward your next career milestone.</p></div><a href="#courses" class="btn btn-white btn-lg">Explore Courses →</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about"><a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span>Skill<span>BD</span></span></a><p>Practical learning for ambitious people. Learn skills, build projects and grow your career.</p><div class="socials"><a href="#">f</a><a href="#">in</a><a href="#">▶</a></div></div>
+      <div><h4>Platform</h4><a href="#courses">Courses</a><a href="#live">Live Classes</a><a href="#success">Success Stories</a><a href="#blog">Blog</a></div>
+      <div><h4>Company</h4><a href="#">About Us</a><a href="#">Contact</a><a href="#">Become an Instructor</a><a href="#">Careers</a></div>
+      <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Refund Policy</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+    </div>
+    <div class="container copyright"><span>© 2026 SkillBD. All rights reserved.</span><span>Made with ♥ in Bangladesh</span></div>
+  </footer>
+
+  <div class="modal" id="loginModal"><div class="modal-box"><button class="modal-close">×</button><div class="modal-icon">S</div><h2>Welcome back</h2><p>Login to continue your learning journey.</p><form class="demo-form"><label>Email or phone<input type="text" placeholder="you@example.com"></label><label>Password<input type="password" placeholder="••••••••"></label><button class="btn btn-primary btn-full" type="button" data-toast="Demo login submitted!">Login</button></form><small>Don't have an account? <a href="#" data-switch="registerModal">Create one</a></small></div></div>
+
+  <div class="modal" id="registerModal"><div class="modal-box"><button class="modal-close">×</button><div class="modal-icon">S</div><h2>Create your account</h2><p>Start learning with SkillBD today.</p><form class="demo-form"><label>Full name<input type="text" placeholder="Your name"></label><label>Email<input type="email" placeholder="you@example.com"></label><label>Password<input type="password" placeholder="Create a password"></label><button class="btn btn-primary btn-full" type="button" data-toast="Demo account created!">Create Account</button></form><small>Already have an account? <a href="#" data-switch="loginModal">Login</a></small></div></div>
+
+  <div class="modal" id="demoModal"><div class="modal-box demo-box"><button class="modal-close">×</button><div class="fake-video"><div class="play-circle">▶</div></div><h2>Free demo class</h2><p>Frontend Development with React — sample lesson.</p><button class="btn btn-primary btn-full" data-toast="Demo class started!">Start Demo</button></div></div>
+
+  <div class="toast" id="toast"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
